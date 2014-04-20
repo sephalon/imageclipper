@@ -1,2 +1,3 @@
-*.o
-src/imageclipper
+.sconsign.dblite
+build
+imageclipper
