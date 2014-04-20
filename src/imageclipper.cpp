@@ -150,8 +150,8 @@ int main( int argc, char *argv[] )
     load_reference( arg, param );
 
     // Mouse and Key callback
-    cvNamedWindow( param->w_name, CV_WINDOW_AUTOSIZE );
-    cvNamedWindow( param->miniw_name, CV_WINDOW_AUTOSIZE );
+    cvNamedWindow( param->w_name, CV_WINDOW_NORMAL );
+    cvNamedWindow( param->miniw_name, CV_WINDOW_NORMAL );
     cvSetMouseCallback( param->w_name, mouse_callback, param );
     key_callback( arg, param );
     cvDestroyWindow( param->w_name );
