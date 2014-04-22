@@ -250,7 +250,9 @@ void key_callback( const ArgParam* arg, CvCallbackParam* param )
         cvPointTo32f( param->shear ) );
     cvShowImageAndRectangle( param->w_name, param->img, 
         cvRect32fFromRect( param->rect, param->rotate ), 
-        cvPointTo32f( param->shear ) );
+        cvPointTo32f( param->shear ),
+        CV_RGB(255, 255, 0),
+        5 );
 
     while( true ) // key callback
     {
@@ -553,7 +555,9 @@ void key_callback( const ArgParam* arg, CvCallbackParam* param )
             {
                 cvShowImageAndRectangle( param->w_name, param->img, 
                                          cvRect32fFromRect( param->rect, param->rotate ), 
-                                         cvPointTo32f( param->shear ) );
+                                         cvPointTo32f( param->shear ),
+                                         CV_RGB(255, 255, 0),
+                                         5 );
                 cvShowCroppedImage( param->miniw_name, param->img, 
                                     cvRect32fFromRect( param->rect, param->rotate ), 
                                     cvPointTo32f( param->shear ) );
@@ -622,7 +626,9 @@ void mouse_callback( int event, int x, int y, int flags, void* _param )
 
         cvShowImageAndRectangle( param->w_name, param->img, 
                                  cvRect32fFromRect( param->rect, param->rotate ), 
-                                 cvPointTo32f( param->shear ) );
+                                 cvPointTo32f( param->shear ),
+                                 CV_RGB(255, 255, 0),
+                                 5 );
         cvShowCroppedImage( param->miniw_name, param->img, 
                             cvRect32fFromRect( param->rect, param->rotate ), 
                             cvPointTo32f( param->shear ) );
@@ -749,7 +755,9 @@ void mouse_callback( int event, int x, int y, int flags, void* _param )
 
         cvShowImageAndRectangle( param->w_name, param->img, 
                                  cvRect32fFromRect( param->rect, param->rotate ), 
-                                 cvPointTo32f( param->shear ) );
+                                 cvPointTo32f( param->shear ),
+                                 CV_RGB(255, 255, 0),
+                                 5 );
         cvShowCroppedImage( param->miniw_name, param->img, 
                             cvRect32fFromRect( param->rect, param->rotate ), 
                             cvPointTo32f( param->shear ) );
